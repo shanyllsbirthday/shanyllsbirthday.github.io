@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
 }
@@ -44,6 +43,12 @@ button {
 
     .greetingsTwo {
         max-width: 58vw !important;
+    }
+    .greetingsThree {
+        top: 710px !important;
+        left: 10px;
+        max-width: 30vw;
+        position: absolute;
     }
 }
 
@@ -92,4 +97,43 @@ button {
 
 #pangga {
     font-weight: bold;
+}
+
+.akbay {
+    background-image: url(akbay.jpg);
+    min-height: 66vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.greetingsThree {
+    max-width: 30vw;
+    position: absolute;
+    top: 810px;
+    left: 10px;
+}
+
+#always {
+    padding: 10px;
+    font-size: clamp(12px, 1vw, 24px);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: justify;
+}
+
+.greetingsFour {
+    max-width: 30vw;
+    position: absolute;
+    top: 950px;
+    right: 10px;
+}
+
+#alwaysTwo {
+    padding: 10px;
+    font-size: clamp(12px, 1vw, 24px);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: justify;
 }
