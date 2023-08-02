@@ -1,1 +1,95 @@
 
+* {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.birthday-head {
+    background-image: url(666g.jpg);
+    min-height: 56vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(235, 245, 255);
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.head {
+    max-width: 30.3vw;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .head {
+        max-width: 50vw;
+    }
+
+    .greetingsTwo {
+        max-width: 58vw !important;
+    }
+}
+
+#greetings {
+    padding: 0 10px;
+
+}
+
+#words {
+    padding: 10px;
+    font-size: clamp(12px, 1vw, 24px);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: justify;
+}
+
+#colors {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hold {
+    background-image: url(555g.jpg);
+    min-height: 45vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.greetingsTwo {
+    max-width: 30vw;
+    position: absolute;
+    top: 410px;
+    right: 10px;
+}
+
+#hold {
+    /* font-family: 'Handjet', cursive; */
+    padding: 10px;
+    font-size: clamp(12px, 1vw, 24px);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: justify;
+}
+
+#pangga {
+    font-weight: bold;
+}
