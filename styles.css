@@ -122,6 +122,28 @@ button {
     align-items: justify;
 }
 
+.handkiss {
+    background-image: url(handkiss.jpg);
+    min-height: 45vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.greetingsSix {
+    max-width: 30vw;
+    position: absolute;
+    top: 1400px;
+    left: 10px;
+}
+
+#kiss {
+    padding: 10px;
+    font-size: clamp(12px, 1vw, 24px);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: justify;
+}
 @media screen and (max-width: 700px) {
     .head {
         max-width: 50vw;
