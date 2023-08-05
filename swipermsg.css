@@ -1,0 +1,31 @@
+.swiperTwo {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .swiper-slideTwo {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slideTwo img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .swiper-pagination {
+    /* display: none; */
+  }
+
+
+  .msg {
+    font-family: 'Handjet', cursive;  }
+  
