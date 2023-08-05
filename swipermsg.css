@@ -1,30 +1,36 @@
 .swiperTwo {
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+  .swiperTwo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* width: 100vw;
-    height: 100vh; */
+    align-items: center;  
   }
-  
-  .swiper-slideTwo {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-    
+
+}
+
+/* .swiper-slideTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .sweetmsg {
-    width: 50%;
+  width: 50%;
 }
 
 .tre {
-    color: #000;
-    font-size: 20px;
+  color: #000;
+  font-size: 20px;
 }
 
-  .msg {
-    font-size: 30px;
-    font-family: 'Handjet', cursive;  }
-  
+.msg {
+  font-size: 30px;
+  font-family: 'Handjet', cursive;
+}
