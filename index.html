@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="swipermsg.css">
+    <link rel="stylesheet" href="secret.css">
 
     <title>Happiest Birthday, ga!</title>
 </head>
@@ -233,7 +234,7 @@
                                     whenever you are here is where i call home."</h1>
                             </div>
                         </div>
-                      
+
                         <div class="swiper-slide">
                             <div class="sweetmsg">
                                 <h1 class="msg">"life has not been always easy, when you came its different now."</h1>
@@ -302,7 +303,8 @@
 
                         <div class="swiper-slide">
                             <div class="sweetmsg">
-                                <h1 class="msg">"you`re pretty much the only thing that makes me want to get up everyday."</h1>
+                                <h1 class="msg">"you`re pretty much the only thing that makes me want to get up
+                                    everyday."</h1>
                             </div>
                         </div>
 
@@ -351,7 +353,7 @@
                                 <h1 class="msg">"i am grateful you`re mine." </h1>
                             </div>
                         </div>
-                         <!-- poem -->
+                        <!-- poem -->
                         <div class="swiper-slide">
                             <div class="sweetmsg">
                                 <h1 class="msg four">"remember that......"</h1>
@@ -425,9 +427,88 @@
             </div>
 
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="swiper.js"></script>
-        <script src="script.js"></script>
+
+        <footer>
+            <!-- The Modal -->
+            <div class="modal" id="passwordModal">
+                <div class="modal-content">
+                    <div class="modal-enter">
+                        <p>Enter password: <span><i class="fa-solid fa-xmark" id="wrong"></i></span></p>
+                        <input type="password" id="passwordInput" placeholder="our first date 10/10/23" />
+                        <button type="button" onclick="checkPassword()" id="secretBtn"><a href="#divToDisplay" id="toop">Enter</a></button>
+                        <p id="errorMessage" style="color: red; display: none;">Incorrect password.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button id="secret">CLICK ME NOW</button>
+        </footer>
+    </div>
+
+    <div id="divToDisplay" class="navbar">
+        <div class="topSecret">
+            <div class="secondVid">
+                <video width="" height="" autoplay muted loop id="video-background">
+                    <source src="ayalaHug.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="secondVid">
+                <video width="" height="" autoplay muted loop id="video-backgroundFive">
+                    <source src="yellowComp.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+
+            <div class="secondVid">
+                <video width="" height="" autoplay muted loop id="video-backgroundtwo">
+                    <source src="seaside.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="topkiss">
+                <!-- <div id="greetings">
+                    <audio src="fallen.mp3" id="myAudio"></audio>
+                    <button onclick="toggleAudio()">
+                        <i id="playPauseIcon" class="fa-solid fa-play"></i>
+                    </button>
+                </div> -->
+                <video width="" height="" autoplay muted loop id="video-backgroundThree">
+                    <source src="ayalaTernoVid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="topkiss">
+                <video width="" height="" autoplay muted loop id="video-backgroundThree">
+                    <source src="AyalaBW.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="topkiss">
+                <video width="" height="" autoplay muted loop id="video-backgroundFour">
+                    <source src="Unif.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="topkissFive">
+                <video width="" height="" autoplay muted loop id="video-backgroundFour">
+                    <source src="howItStartedf.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="secret.js"></script>
+    <script src="swiper.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
