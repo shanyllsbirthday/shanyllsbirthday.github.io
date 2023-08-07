@@ -4,14 +4,16 @@ var secretBtn = document.getElementById("wrong");
 var audioTwo = document.getElementById('myAudioTwo');
 var audioOrg = document.getElementById('myAudio');
 var goHome = document.getElementById('goHome');
+var maxAttempts = 3;
+var attemptsLeft = maxAttempts;
 
 goHome.addEventListener('click', function(){
   document.getElementById('withPalanggaBestMoments').style.display = 'none';
   document.querySelector(".container").style.display = "block";
+  document.getElementById("passwordInput").value = "";
+  attemptsLeft = 3;
   
 });
-
-
 
 secretBtn.addEventListener('click', function () {
   modal.style.display = 'none';
@@ -23,9 +25,6 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-
-var maxAttempts = 3;
-var attemptsLeft = maxAttempts;
 
 function checkPassword() {
   var enteredPassword = document.getElementById("passwordInput").value;
@@ -41,8 +40,9 @@ function checkPassword() {
     document.querySelector(".container").style.display = "none";
     document.getElementById("withPalanggaBestMoments").style.display = "block";
   } else {
-    // If password is incorrect, reduce attempts and display error message
+    // If password is incorrect, reduce attempts, clear password field, and display error message
     attemptsLeft--;
+    document.getElementById("passwordInput").value = ""; // Clear the password field
     if (attemptsLeft <= 0) {
       // If no attempts left, close the modal
       modal.style.display = "none";
@@ -53,6 +53,7 @@ function checkPassword() {
     }
   }
 }
+
 
 //show model when click button
 document.getElementById("secret").onclick = function () {
