@@ -14,20 +14,35 @@ window.onclick = function (event) {
   }
 };
 
+var maxAttempts = 3;
+var attemptsLeft = maxAttempts;
+
 function checkPassword() {
   var enteredPassword = document.getElementById("passwordInput").value;
   var correctPassword = "2/11/2023";
+  var errorMessage = document.getElementById("errorMessage");
 
   if (enteredPassword === correctPassword) {
+    // If password is correct, do whatever you need to do (e.g., display content)
     audioTwo.play();
     modal.style.display = "none";
-    document.getElementById("errorMessage").style.display = "none";
+    errorMessage.style.display = "none";
     document.querySelector(".container").style.display = "none";
     document.getElementById("withPalanggaBestMoments").style.display = "block";
   } else {
-    document.getElementById("errorMessage").style.display = "block";
+    // If password is incorrect, reduce attempts and display error message
+    attemptsLeft--;
+    if (attemptsLeft <= 0) {
+      // If no attempts left, close the modal
+      modal.style.display = "none";
+    } else {
+      // Show the remaining attempts and error message
+      errorMessage.textContent = "Incorrect. You have " + attemptsLeft + "  attempts left.";
+      errorMessage.style.display = "block";
+    }
   }
 }
+
 
 //show model when click button
 document.getElementById("secret").onclick = function () {
