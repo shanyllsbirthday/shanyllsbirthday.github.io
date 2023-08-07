@@ -3,6 +3,14 @@ var modal = document.getElementById("passwordModal");
 var secretBtn = document.getElementById("wrong");
 var audioTwo = document.getElementById('myAudioTwo');
 var audioOrg = document.getElementById('myAudio');
+var goHome = document.getElementById('goHome');
+
+goHome.addEventListener('click', function(){
+  document.getElementById('withPalanggaBestMoments').style.display = 'none';
+  document.querySelector(".container").style.display = "block";
+  
+});
+
 
 
 secretBtn.addEventListener('click', function () {
