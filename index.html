@@ -432,12 +432,14 @@
             <!-- The Modal -->
             <div class="modal" id="passwordModal">
                 <div class="modal-content">
-                    <div class="modal-enter">
-                        <p>Enter password: <span><i class="fa-solid fa-xmark" id="wrong"></i></span></p>
-                        <input type="password" id="passwordInput" placeholder="secret-code" />
-                        <button type="button" onclick="checkPassword()" id="secretBtn"><a
-                                href="#withPalanggaBestMoments" id="toop">Enter</a></button>
-                        <p id="errorMessage" style="color: red; display: none;">Taronga og type langga</p>
+                    <div class="modal-content">
+                        <div class="modal-enter">
+                            <p>Enter password: <span><i class="fa-solid fa-xmark" id="wrong"></i></span></p>
+                            <input type="password" id="passwordInput" placeholder="secret-code" required>
+                            <button type="button" onclick="checkPassword()" id="secretBtn"><a
+                                    href="#withPalanggaBestMoments" id="toop">Enter</a></button>
+                            <p id="errorMessage" style="color: red; display: none;">Taronga og type langga</p>
+                        </div>
                     </div>
                 </div>
 
