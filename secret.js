@@ -37,7 +37,7 @@ function checkPassword() {
       modal.style.display = "none";
     } else {
       // Show the remaining attempts and error message
-      errorMessage.textContent = "Incorrect. You have " + attemptsLeft + "  attempts left.";
+      errorMessage.textContent = "Taronga langga. You have " + attemptsLeft + "  attempts left.";
       errorMessage.style.display = "block";
     }
   }
