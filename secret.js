@@ -17,12 +17,16 @@ goHome.addEventListener('click', function(){
 
 secretBtn.addEventListener('click', function () {
   modal.style.display = 'none';
+  errorMessage.style.display = "";
+
 });
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target === modal) {
     modal.style.display = "none";
+    errorMessage.style.display = "";
+
   }
 };
 
@@ -33,9 +37,9 @@ function checkPassword() {
 
   if (enteredPassword.trim() === "") {
     // If password field is empty, display the fill fields banner and return early
-    alert ("Ah tapulana wa jud gi type. Ge leave blank ra ang password");
-    // errorMessage.textContent = "Ah tapulana wa jud gi type uy. Ge leave blank ra ang password";
-    // errorMessage.style.display = "none";
+    // alert ("Ah tapulana wa jud gi type. Ge leave blank ra ang password");
+    errorMessage.textContent = "Ah tapulana wa jud gi type ang code. Type pod!";
+    errorMessage.style.display = "block";
     return;
   } else {
     // Hide the fill fields banner if the password field is not empty
