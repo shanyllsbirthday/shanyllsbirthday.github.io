@@ -18,6 +18,11 @@
   height: 100vh;
 }
 
+.sweetmsg h1 {
+  color: black;
+}
+
+
 @media screen and (max-width: 900px){
   .swiper {
     display: flex;
