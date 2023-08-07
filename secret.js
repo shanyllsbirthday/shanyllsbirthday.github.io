@@ -72,8 +72,6 @@ function checkPassword() {
   }
 }
 
-
-
 //show model when click button
 document.getElementById("secret").onclick = function () {
   modal.style.display = "block";
