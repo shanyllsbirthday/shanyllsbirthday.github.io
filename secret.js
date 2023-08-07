@@ -2,6 +2,8 @@
 var modal = document.getElementById("passwordModal");
 var secretBtn = document.getElementById("wrong");
 var audioTwo = document.getElementById('myAudioTwo');
+var audioOrg = document.getElementById('myAudio');
+
 
 secretBtn.addEventListener('click', function () {
   modal.style.display = 'none';
@@ -25,6 +27,7 @@ function checkPassword() {
   if (enteredPassword === correctPassword) {
     // If password is correct, do whatever you need to do (e.g., display content)
     audioTwo.play();
+    audioOrg.pause();
     modal.style.display = "none";
     errorMessage.style.display = "none";
     document.querySelector(".container").style.display = "none";
