@@ -14,15 +14,17 @@ secretBtn.addEventListener('click', function(){
  };
 
 
+
+
  function checkPassword() {
    var enteredPassword = document.getElementById("passwordInput").value;
-   var correctPassword = "kenet";
+   var correctPassword = "2/11/2023";
 
    if (enteredPassword === correctPassword) {
      modal.style.display = "none";
      document.getElementById("errorMessage").style.display = "none";
      document.querySelector(".container").style.display = "none";
-     document.getElementById("divToDisplay").style.display = "block";
+     document.getElementById("withPalanggaBestMoments").style.display = "block";
    } else {
      document.getElementById("errorMessage").style.display = "block";
    }
