@@ -31,6 +31,17 @@ function checkPassword() {
   var correctPassword = "2/11/2023";
   var errorMessage = document.getElementById("errorMessage");
 
+  if (enteredPassword.trim() === "") {
+    // If password field is empty, display the fill fields banner and return early
+    alert ("Ah tapulana wa jud gi type. Ge leave blank ra ang password");
+    // errorMessage.textContent = "Ah tapulana wa jud gi type uy. Ge leave blank ra ang password";
+    // errorMessage.style.display = "none";
+    return;
+  } else {
+    // Hide the fill fields banner if the password field is not empty
+    errorMessage.style.display = "none";
+  }
+
   if (enteredPassword === correctPassword) {
     // If password is correct, do whatever you need to do (e.g., display content)
     audioTwo.play();
@@ -40,9 +51,12 @@ function checkPassword() {
     document.querySelector(".container").style.display = "none";
     document.getElementById("withPalanggaBestMoments").style.display = "block";
   } else {
-    // If password is incorrect, reduce attempts, clear password field, and display error message
-    attemptsLeft--;
+    // If password is incorrect and the password field is not empty
+    if (enteredPassword.trim() !== "") {
+      attemptsLeft--;
+    }
     document.getElementById("passwordInput").value = ""; // Clear the password field
+
     if (attemptsLeft <= 0) {
       // If no attempts left, close the modal
       modal.style.display = "none";
@@ -53,6 +67,7 @@ function checkPassword() {
     }
   }
 }
+
 
 
 //show model when click button
