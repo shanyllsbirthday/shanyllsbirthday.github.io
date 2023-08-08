@@ -40,7 +40,7 @@ window.onclick = function (event) {
 
 function checkPassword() {
   var enteredPassword = document.getElementById("passwordInput").value;
-  var correctPassword = "2/11/2023";
+  var correctPassword = "11111";
   var errorMessage = document.getElementById("errorMessage");
 
   if (enteredPassword.trim() === "") {
