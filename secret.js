@@ -13,8 +13,7 @@ var attemptsLeft = maxAttempts;
 
 goHome.addEventListener('click', function () {
   location.reload();
-  playPauseIcon.classList.remove('fa-play');
-  playPauseIcon.classList.add('fa-pause');
+  audioOrg.play();
   document.getElementById('withPalanggaBestMoments').style.display = 'none';
   document.querySelector(".container").style.display = "block";
   document.getElementById("passwordInput").value = "";

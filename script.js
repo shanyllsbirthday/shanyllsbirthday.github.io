@@ -12,3 +12,11 @@ function toggleAudio() {
     playPauseIcon.classList.add('fa-play');
   }
 }
+
+var goToHomePlayAudio = document.getElementById('forHome');
+
+goToHomePlayAudio.addEventListener('click', function () {
+  audioOrg.play();
+  playPauseIcon.classList.remove('fa-play');
+  playPauseIcon.classList.add('fa-pause');
+});
