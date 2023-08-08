@@ -8,7 +8,7 @@
 }
 
 .birthday-head {
-    background-image: url(/img/666g.jpg);
+    background-image: url(666g.jpg);
     min-height: 56vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@ button {
 }
 
 .hold {
-    background-image: url(/img/555g.jpg);
+    background-image: url(555g.jpg);
     min-height: 45vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@ button {
 }
 
 .akbay {
-    background-image: url(/img/akbay.jpg);
+    background-image: url(akbay.jpg);
     min-height: 66vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ button {
 }
 
 .handkiss {
-    background-image: url(/img/handkiss.jpg);
+    background-image: url(handkiss.jpg);
     min-height: 45vh;
     background-position: center;
     background-repeat: no-repeat;
