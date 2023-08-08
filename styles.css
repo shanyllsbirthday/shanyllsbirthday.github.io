@@ -1,200 +1,220 @@
-* {
-    margin: 0;
-}
-
-.container {
-    margin: 0;
-    padding: 0;
-}
-
-.birthday-head {
-    background-image: url(666g.jpg);
-    min-height: 56vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+footer {
+    margin-top: 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-button {
-    color: rgb(0, 0, 0);
-    background-color: rgb(235, 245, 255);
-    border-color: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-.head {
-    max-width: 30.3vw;
-    position: absolute;
-    top: 90px;
-    left: 10px;
-}
-
-@media screen and (max-width: 900px) {
-    .head {
-        max-width: 27vw;
-        position: absolute;
-        top: 80px;
-        left: 1px;
-    }
-
-    #greetings p {
-        font-size: 10px;
-        text-align: justify;
-    }
-}
-
-#greetings {
-    padding: 0 10px;
-
-}
-
-#words {
+    background-color: #000000;
+    padding: 7px;
+  }
+  
+  .topSecret {
+    top: 0;
+  }
+  
+  #secret {
+    border-radius: 10px;
+    font-size: 'handjet';
+    color: #fff;
+    border: none;
     padding: 10px;
-    font-size: clamp(12px, 1vw, 24px);
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.2);
-    align-items: justify;
-}
-
-#colors {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hold {
-    background-image: url(555g.jpg);
-    min-height: 45vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.greetingsTwo {
-    max-width: 30vw;
-    position: absolute;
-    top: 460px;
-    right: 10px;
-}
-
-#hold {
-    /* font-family: 'Handjet', cursive; */
+    background-color: #a19e9e;
+  }
+  
+  #secret:hover {
+    background-color: #3e8544;
+    color: #fff;
+  }
+  
+  #toop {
+    text-decoration: none;
+    color: #fff;
+  
+  }
+  
+  #home {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #forHome {
+    border-radius: 10px;
     padding: 10px;
-    font-size: clamp(12px, 1vw, 24px);
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5);
-    align-items: justify;
-}
-
-@media screen and (max-width: 900px) {
-    .greetingsTwo {
-        max-width: 25vw;
-        position: absolute;
-        top: 580px;
-        right: 10px;
-    }
-
-    .greetingsTwo p {
-        font-size: 10px !important;
-        text-align: justify;
-    }
-}
-
-#pangga {
-    font-weight: bold;
-}
-
-.akbay {
-    background-image: url(akbay.jpg);
-    min-height: 66vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.greetingsThree {
-    max-width: 30vw;
-    position: absolute;
-    top: 950px;
-    left: 10px;
-}
-
-@media screen and (max-width: 900px) {
-    .greetingsThree {
-        max-width: 30vw;
-        position: absolute;
-        top: 1100px;
-        left: 10px;
-    }
-
-    .greetingsFour {
-        max-width: 30vw;
-        position: absolute;
-        top: 1500px !important;
-        right: 10px;
-    }
-
-    .greetingsFive {
-        max-width: 30vw;
-        position: absolute;
-        top: 1800px !important;
-        left: 10px;
-    }
-
-    .greetingsTwo p {
-        font-size: 10px !important;
-        text-align: justify;
-    }
-}
-
-#always {
+    border: none;
+    background-color: #a19e9e;
+  
+  }
+  
+  #forHome:hover {
+    border-radius: 10px;
     padding: 10px;
-    font-size: clamp(12px, 1vw, 24px);
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: justify;
-}
-
-.greetingsFour {
-    max-width: 30vw;
-    position: absolute;
-    top: 1250px;
-    right: 10px;
-}
-
-#alwaysTwo {
+    background-color: #3e8544;
+  }
+  
+  #secretBtn {
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: #9f9c9c;
+    color: #fff;
+  }
+  
+  #wrong {
+    font-size: 20px;
+  }
+  
+  #wrong:hover {
+    color: #3e8544;
+  }
+  
+  #secretBtn:hover {
+    background-color: #3e8544;
+    color: #fff;
+  }
+  
+  #passwordInput {
+    border-radius: 5px;
+    max-width: 200px;
     padding: 10px;
-    font-size: clamp(12px, 1vw, 24px);
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: justify;
-}
-
-.handkiss {
-    background-image: url(handkiss.jpg);
-    min-height: 45vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.greetingsFive {
-    max-width: 30vw;
-    position: absolute;
-    top: 1400px;
-    left: 10px;
-}
-
-#kiss {
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1;
+  }
+  
+  .modal-content {
     padding: 10px;
-    font-size: clamp(12px, 1vw, 24px);
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: justify;
-}
+    gap: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 100px auto;
+    max-width: 350px;
+    max-height: 100px;
+    background-image: url(tulips.avif);
+    
+  }
+  
+  .modal-enter {
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-enter p{
+    color: #000;
+    
+  }
+  
+  
+  .fa-xmark {
+    color: #000000;
+    padding: 0 0 0 100px;
+  
+  }
+  
+  #withPalanggaBestMoments {
+    display: none;
+  
+  }
+  
+  .topSecret {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #video-background {
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  #video-backgroundtwo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  #video-backgroundThree {
+    object-fit: cover;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #video-backgroundFour {
+    object-fit: cover;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #video-backgroundFive {
+    object-fit: cover;
+    z-index: -1;
+    width: 100vw;
+    height: 177vh;
+    transform: rotate(270deg);
+  }
+  
+  #errorMessage {
+    padding: 5px;
+    color:rgb(0, 0, 0);
+    display: none;
+    font-size: 10px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    #video-backgroundFive {
+      width: 105vw !important;
+      height: 77vh !important;
+    }
+  
+  }
+  
+  .goHomeTop {
+    padding: 10px;
+  }
+  
+   #goHome, #goTop {
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #918d8d;
+    color: white;
+   }
+  
+   #homehome {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #9f9c9c;
+   }
+  
+   #toptop {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #9f9c9c;
+   }
+  
+   #goHome:hover {
+    background-color: #3e8544;
+   }
+  
+   #goTop:hover {
+    background-color: #3e8544;
+   }
