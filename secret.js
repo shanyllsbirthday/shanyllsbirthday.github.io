@@ -12,15 +12,14 @@ var maxAttempts = 3;
 var attemptsLeft = maxAttempts;
 
 goHome.addEventListener('click', function () {
-  audioTwo.pause();
-  audioOrg.play();
+  location.reload();
   playPauseIcon.classList.remove('fa-play');
   playPauseIcon.classList.add('fa-pause');
   document.getElementById('withPalanggaBestMoments').style.display = 'none';
   document.querySelector(".container").style.display = "block";
   document.getElementById("passwordInput").value = "";
+  audioOrg.play();
   attemptsLeft = 3;
-
 });
 
 secretBtn.addEventListener('click', function () {
@@ -40,7 +39,7 @@ window.onclick = function (event) {
 
 function checkPassword() {
   var enteredPassword = document.getElementById("passwordInput").value;
-  var correctPassword = "11111";
+  var correctPassword = "2/11/2023";
   var errorMessage = document.getElementById("errorMessage");
 
   if (enteredPassword.trim() === "") {
