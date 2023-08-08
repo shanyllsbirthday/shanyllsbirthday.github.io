@@ -14,9 +14,14 @@ function toggleAudio() {
 }
 
 var goToHomePlayAudio = document.getElementById('forHome');
+var goTopPlayAudio = document.getElementById('goTop');
 
 goToHomePlayAudio.addEventListener('click', function () {
   audioOrg.play();
   playPauseIcon.classList.remove('fa-play');
   playPauseIcon.classList.add('fa-pause');
+});
+
+goTopPlayAudio.addEventListener('click', function () {
+  audioTwo.play();
 });
