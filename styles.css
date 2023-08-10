@@ -48,6 +48,29 @@ button {
     }
 }
 
+@media screen and (max-width: 376px) {
+    .head {
+        max-width: 100vw !important;
+        position: absolute;
+        left: 189px;
+        top: 1px;
+    }
+
+    #greetings p {
+        font-size: 7px;
+        text-align: justify;
+    }
+    #songs {
+        width: 15px;
+        padding: 0;
+    }
+
+    #playPauseIcon {
+        font-size: 10px;
+        padding: 0;
+    }
+}
+
 #greetings {
     padding: 0 10px;
 
@@ -83,7 +106,6 @@ button {
 }
 
 #hold {
-    /* font-family: 'Handjet', cursive; */
     padding: 10px;
     font-size: clamp(12px, 1vw, 24px);
     color: #ffffff;
@@ -101,6 +123,20 @@ button {
 
     .greetingsTwo p {
         font-size: 10px !important;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .greetingsTwo {
+        max-width: 70vw;
+        position: absolute;
+        top: 370px;
+        right: 5px;
+    }
+
+    #hold {
+        font-size: 7px !important;
         text-align: justify;
     }
 }
@@ -151,6 +187,101 @@ button {
         font-size: 10px !important;
         text-align: justify;
     }
+}
+
+@media screen and (max-width: 376px) {
+    .greetingsThree {
+        max-width: 70vw;
+        position: absolute;
+        top: 668px;
+        left: 1px;
+    }
+
+    #always {
+        font-size: 7px !important;
+    }
+
+    .greetingsFour {
+        max-width: 50vw !important;
+        position: absolute;
+        top: 1041px !important;
+        right: 1px !important;
+    }
+
+     #alwaysTwo {
+        font-size: 7px !important;
+    }
+
+    .greetingsFive {
+        max-width: 50vw !important;
+        position: absolute;
+        top: 1150px !important;
+        left: 200px !important;
+    }
+
+    .greetingsTwo p {
+        font-size: 10px !important;
+        text-align: justify;
+    }
+
+    #kiss {
+        font-size: 7px !important;
+    }
+
+    .msg {
+        font-size: 15px !important;
+    }
+
+    #forHome {
+        font-size: 8px !important;
+    }
+
+    #secret {
+        font-size: 8px !important;
+    }
+
+    #passwordInput {
+        max-width: 100px !important;
+        padding: 5px !important;
+      }
+      
+      .modal {
+        width: 100% !important;
+        height: 100px;
+        z-index: 1;
+      }
+      
+      .modal-content {
+        padding: 10px;
+        gap: 5px;
+        border-radius: 10px;
+        margin: 100px auto !important;
+        max-width: 350px;
+        max-height: 100px;
+        
+      }
+      
+      .modal-enter {
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .modal-enter p{
+        color: #000;
+        
+      }
+      
+      
+      .fa-xmark {
+        color: #000000;
+        padding: 0 0 0 100px;
+      }
+    
+      #goHome, #goTop {
+        font-size: 10px;
+      }
 }
 
 #always {
