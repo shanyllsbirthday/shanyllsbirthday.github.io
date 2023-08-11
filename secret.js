@@ -13,7 +13,6 @@ var attemptsLeft = maxAttempts;
 
 goHome.addEventListener('click', function () {
   location.reload();
-  audioOrg.play();
   document.getElementById('withPalanggaBestMoments').style.display = 'none';
   document.querySelector(".container").style.display = "block";
   document.getElementById("passwordInput").value = "";
@@ -35,6 +34,13 @@ window.onclick = function (event) {
 
   }
 };
+
+document.getElementById("passwordInput").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") { 
+    event.preventDefault(); // Prevent the default form submission behavior
+    checkPassword(); 
+  }
+});
 
 function checkPassword() {
   var enteredPassword = document.getElementById("passwordInput").value;
