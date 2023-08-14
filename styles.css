@@ -190,6 +190,25 @@ button {
 }
 
 @media screen and (max-width: 376px) {
+
+    table {
+        margin: 2px !important;
+        padding: 0;
+    }
+
+    th, td {
+        font-size: 7px !important;
+        padding: 5px !important;
+        border-width: 3px !important;
+    }
+    
+    .greetingsThree {
+        max-width: 70vw;
+        position: absolute;
+        top: 668px;
+        left: 1px;
+    }
+
     .greetingsThree {
         max-width: 70vw;
         position: absolute;
