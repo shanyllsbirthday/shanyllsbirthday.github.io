@@ -10,6 +10,7 @@ var playPauseIcon = document.getElementById('playPauseIcon');
 
 
 sched.addEventListener('click', function (){
+  audioOrg.play();
   document.getElementById('schedule').style.display = 'block';
   document.querySelector(".container").style.display = "none";
   document.getElementById("withPalanggaBestMoments").style.display = "none";
