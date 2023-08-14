@@ -1,0 +1,85 @@
+table {
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    
+}
+
+.table-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+th {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 5px;
+}
+
+tr {
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 7px;
+    border-collapse: collapse;
+    border-color: black;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+td {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffe9d8 ;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.schedule {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fee {
+    background-color: #f4e2d5;
+}
+
+.see {
+    background-color: #e7cab4;
+
+
+}
+
+body {
+    background-color:#ffe9d8 ;
+    margin: 0;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 100% !important;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    th {
+        font-size: 15px;
+    }
+
+    td {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
