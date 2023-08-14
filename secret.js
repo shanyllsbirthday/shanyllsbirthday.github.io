@@ -4,9 +4,16 @@ var secretBtn = document.getElementById("wrong");
 var audioTwo = document.getElementById('myAudioTwo');
 var audioOrg = document.getElementById('myAudio');
 var goHome = document.getElementById('goHome');
+var sched = document.getElementById('dyul');
 
 var playPauseIcon = document.getElementById('playPauseIcon');
 
+
+sched.addEventListener('click', function (){
+  document.getElementById('schedule').style.display = 'block';
+  document.querySelector(".container").style.display = "none";
+  document.getElementById("withPalanggaBestMoments").style.display = "none";
+});
 
 var maxAttempts = 3;
 var attemptsLeft = maxAttempts;
