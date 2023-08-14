@@ -329,3 +329,20 @@ button {
     background-color: rgba(0, 0, 0, 0.3);
     align-items: justify;
 }
+
+#schedule {
+    display: none;
+}
+
+#sched {
+    text-decoration: none;
+    color: #fff;
+}
+
+#dyul {
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    background-color: #a19ea1;
+}
